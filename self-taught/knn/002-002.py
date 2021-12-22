@@ -1,5 +1,3 @@
-
-# %matplotlib inline
 from sklearn.datasets import make_blobs
 #导入KNN分类器
 from sklearn.neighbors import KNeighborsClassifier
@@ -44,10 +42,11 @@ plt.title("Classifier:KNN")
 #把新的数据点用五星表示出来
 
 starX = 6.75 
-starY = 7.82
+starY = 1.82
 
 plt.scatter(starX, starY, marker='*', c='r', s=200)
+plt.scatter(1.75, -7.82, marker='*', c='blue', s=200)
 
 plt.show()
 print('\n\n\n')
-print('新数据点分类是：',clf.predict([[starX, starY]]) )
+print('新数据点分类是：',clf.predict([[starX, starY],[1.75,-7.82],[1.75,7.2]]) )
