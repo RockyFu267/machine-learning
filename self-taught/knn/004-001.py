@@ -12,5 +12,3 @@ X , y = make_regression(n_features=1,n_informative=1,noise=50,random_state=8)
 #用散点图将数据可视化
 plt.scatter(X,y,c='orange',edgecolors='k')
 plt.show()
-
-
